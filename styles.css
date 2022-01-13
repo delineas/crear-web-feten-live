@@ -1,0 +1,81 @@
+/* CSS HEX */
+/*
+--royal-blue-dark: #00296bff;
+--dark-cornflower-blue: #003f88ff;
+--usafa-blue: #00509dff;
+--mikado-yellow: #fdc500ff;
+--cyber-yellow: #ffd500ff;*/
+
+:root {
+  font-family: 'Poppins', sans-serif;
+}
+
+.angry-grid {
+  display: grid;
+
+  grid-template-rows: 60px 70px 600px 500px 600px 600px 600px;
+  grid-template-columns: auto;
+
+  grid-template-areas:
+    'header'
+    'navbar'
+    'banner'
+    'service'
+    'top-blogs'
+    'contact-map'
+    'footer';
+
+  gap: 0px;
+  height: 100%;
+
+}
+
+#item-0 {
+
+  background-color: #000333;
+  grid-area: header;
+
+}
+
+#item-1 {
+
+  background-color: #ffffff;
+  grid-area: banner;
+
+}
+
+#item-2 {
+
+  background-color: #4e9525;
+  grid-area: navbar;
+
+}
+
+#item-3 {
+
+  background-color: #dedede;
+  grid-area: service;
+
+}
+
+#item-4 {
+
+  background-color: #5ba679;
+  grid-area: top-blogs;
+
+}
+
+#item-5 {
+
+  background-color: #89da95;
+  grid-area: contact-map;
+
+}
+
+#item-6 {
+
+  background-color: #000000;
+  grid-area: footer;
+
+}
+
