@@ -11,15 +11,30 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script type="module" src="index.js"></script>
   </head>
   <body>
     <div class="angry-grid">
       <div id="header">{Daniel Primo}</div>
-      <div class="navbar">Home |&nbsp;<a href="#">Quien soy</a>&nbsp;|&nbsp;<a href="#">Contacto</a></div>
-      <div class="banner">Soy Full Stack Developer</div>
-      <div class="main-content">Contenido</div>
-      <div id="item-6">Footer</div>
+
+      <include src="partials/menu.html"></include>
+
+      <div class="banner">
+        <div class="banner__title">Soy Full Stack Developer</div>
+      </div>
+
+      <div class="main-content">
+        <div id="js-pitch" class="pitch">
+
+        </div>
+        <div id="js-featured" class="featured">
+          
+        </div>
+      </div>
+
+      <div class="footer">¿Alguien sabe que poner en el footer?</div>
     </div>
+
   </body>
 </html>

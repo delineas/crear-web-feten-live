@@ -1,0 +1,1 @@
+> El valor mínimo de cualquier aplicación web en la que haya participado como developer es de 100 mil euros. [Leer más](/)

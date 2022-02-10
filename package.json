@@ -1,0 +1,29 @@
+{
+  "name": "web-feten",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "rm -rf dist/* && parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delineas/crear-web-feten-live.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delineas/crear-web-feten-live/issues"
+  },
+  "homepage": "https://github.com/delineas/crear-web-feten-live#readme",
+  "devDependencies": {
+    "parcel": "^2.3.1",
+    "parcel-transformer-markdown": "^2.0.1",
+    "posthtml-include": "^1.7.2"
+  },
+  "dependencies": {
+    "posthtml-parser": "^0.10.2"
+  }
+}

@@ -1,0 +1,29 @@
+.featured-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.featured-item__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.featured-item__description {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+.featured-item__image img {
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s linear;
+}
+
+.featured-item__image img:hover {
+  filter: drop-shadow(0 0 25px rgba(0, 41, 107, 1));
+}

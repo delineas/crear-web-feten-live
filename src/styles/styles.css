@@ -1,13 +1,22 @@
+@import 'featured.css';
+
 :root {
   font-family: 'Poppins', sans-serif;
-  --royal-blue-dark: #00296bff;
+  --royal-blue-dark: #00296b;
   --dark-cornflower-blue: #003f88ff;
-  --usafa-blue: #00509dff;
+  --usafa-blue: #00509d;
   --mikado-yellow: #fdc500ff;
   --cyber-yellow: #ffd500ff;
   --white-color: #ffffff;
   --soft-grey: #f5f5f5;
   --black-color: #333333;
+
+  --padding-base: 8px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 
 .angry-grid {
@@ -24,7 +33,7 @@
     'footer';
 
   gap: 0px;
-  height: 100%;
+  height: 100vh;
 
 }
 
@@ -34,6 +43,7 @@
   background-color: var(--royal-blue-dark);
   color: var(--white-color);
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .navbar {
@@ -42,15 +52,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.navbar-nav {
   background-color: var(--royal-blue-dark);
   color: var(--white-color);
   font-size: 1.2em !important;
+
+  padding: 0 1em;
+  border-radius: .4em;
+
+  transform: skew(-25deg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-  .navbar a {
+  .navbar-nav a {
     color: var(--white-color);
     text-decoration: none;
+    padding: 0.5em;
+    transform: skew(25deg);
+    transition: all 0.3s linear;
+  }
+
+  .navbar-nav a:hover {
+    color: var(--cyber-yellow);
+    background-color: var(--dark-cornflower-blue);
   }
 
 .banner {
@@ -60,23 +89,40 @@
   justify-content: center;
   align-items: center;
 
-  background-color: var(--mikado-yellow);
-  color: var(--royal-blue-dark);
+  color: var(--black-color);
   font-size: 3rem;
+  font-weight: bold;
   font-style: italic;
+}
+
+.banner__title {
+  text-shadow: rgba(0, 80, 157, 0.4) 5px 5px,
+    rgba(0, 80, 157, 0.3) 10px 10px,
+    rgba(0, 80, 157, 0.2) 15px 15px,
+    rgba(0, 80, 157, 0.1) 20px 20px,
+    rgba(0, 80, 157, 0.05) 25px 25px;
 }
 
 .main-content {
   grid-area: main-content;
   background-color: var(--soft-grey);
   color: var(--black-color);
+
+  padding: calc(var(--padding-base)*10) 0;
 }
 
-#item-6 {
+.pitch {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.footer {
 
   background-color: #000000;
   grid-area: footer;
-  color: #fff
+  color: #fff;
+  padding-top: calc(var(--padding-base));
+  padding-bottom: calc(var(--padding-base)*20);
+  text-align: center;
 
 }
-

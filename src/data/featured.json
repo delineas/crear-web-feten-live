@@ -1,0 +1,12 @@
+[
+  {
+    "title": "React",
+    "description": "A JavaScript library for building user interfaces.",
+    "image": "https://cdn.cdnlogo.com/logos/r/63/react.svg"
+  },
+  {
+    "title": "Vue",
+    "description": "A progressive framework for building user interfaces.",
+    "image": "https://cdn.cdnlogo.com/logos/v/69/vue.svg"
+  }
+]
