@@ -1,0 +1,27 @@
+.navbar-nav {
+  background-color: var(--royal-blue-dark);
+  color: var(--white-color);
+  font-size: 1.2em !important;
+
+  padding: 0 1em;
+  border-radius: .4em;
+
+  transform: skew(-25deg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav a {
+  color: var(--white-color);
+  text-decoration: none;
+  padding: 0.5em;
+  transform: skew(25deg);
+  transition: all 0.3s linear;
+}
+
+.navbar-nav a:hover {
+  color: var(--cyber-yellow);
+  background-color: var(--dark-cornflower-blue);
+}

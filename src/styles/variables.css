@@ -1,0 +1,13 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+  --royal-blue-dark: #00296b;
+  --dark-cornflower-blue: #003f88ff;
+  --usafa-blue: #00509d;
+  --mikado-yellow: #fdc500ff;
+  --cyber-yellow: #ffd500ff;
+  --white-color: #ffffff;
+  --soft-grey: #f5f5f5;
+  --black-color: #333333;
+
+  --padding-base: 8px;
+}

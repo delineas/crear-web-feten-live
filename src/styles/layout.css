@@ -1,0 +1,63 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.angry-grid {
+  display: grid;
+
+  grid-template-rows: 60px 70px 300px auto 60px;
+  grid-template-columns: auto;
+
+  grid-template-areas:
+    'header'
+    'navbar'
+    'banner'
+    'main-content'
+    'footer';
+
+  gap: 0px;
+  height: 100vh;
+
+}
+
+
+#header {
+  grid-area: header;
+  background-color: var(--royal-blue-dark);
+  color: var(--white-color);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.navbar {
+  grid-area: navbar;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  grid-area: main-content;
+  background-color: var(--soft-grey);
+  color: var(--black-color);
+
+  padding: calc(var(--padding-base)*10) 0;
+}
+
+.pitch {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.footer {
+
+  background-color: #000000;
+  grid-area: footer;
+  color: #fff;
+  padding-top: calc(var(--padding-base));
+  padding-bottom: calc(var(--padding-base)*20);
+  text-align: center;
+
+}
